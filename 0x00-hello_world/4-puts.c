@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+	/**
+	* main just a description forwq
+	*the main function
+	*/
 int main(void)
 
 {
