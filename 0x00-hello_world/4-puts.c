@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-	/**
-	* main just a description forwq
-	*the main function
-	*/
-int main(void)
+/**
+ * main   -  Prints a text only
+ *
+ * Return: Always 0.
+ */
 
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
