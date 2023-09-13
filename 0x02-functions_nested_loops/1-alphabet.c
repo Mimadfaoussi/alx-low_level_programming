@@ -2,6 +2,7 @@
  *print_alphabet-function that print alphabets in lowercase in the stdout
  *Return:there is no return
  */
+#include "main.h"
 
 void print_alphabet(void)
 {
