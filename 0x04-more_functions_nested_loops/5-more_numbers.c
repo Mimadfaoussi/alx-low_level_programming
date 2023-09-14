@@ -23,6 +23,17 @@ void more_numbers(void)
 			j++;
 		}
 		i++;
-		_putchar('\n');
+		if (i < 10)
+			_putchar('\n');
+
 	}
 }
+
+
+int main(void)
+{
+    more_numbers();
+    return (0);
+}
+
+
