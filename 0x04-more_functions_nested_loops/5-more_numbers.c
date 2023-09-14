@@ -4,27 +4,19 @@
  * more_numbers-prints 10 times nbrs from 0 to 14
  * Return:nothing
  */
-
 void more_numbers(void)
 {
 	int i;
 	int j;
-	int count;
 
-	i = 0;
-	while (i < 10)
+	for (i = 0; i <= 9; i++)
 	{
-		j = 0;
-		while (j < 15)
+		for (j = 0; j <= 14; j++)
 		{
-			if (j > 9)
+			if (b >= 10)
 				_putchar((j / 10) + '0');
 			_putchar((j % 10) + '0');
-			j++;
 		}
-		i++;
-		if (i < 10)
-			_putchar('\n');
-
+		_putchar('\n');
 	}
 }
