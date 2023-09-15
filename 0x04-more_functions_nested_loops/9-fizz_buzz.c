@@ -34,3 +34,15 @@ void fizz_buzz(void)
 	}
 	printf("\n");
 }
+
+/**
+ * main-call fizzbuzz
+ * Return:0for success.
+ */
+
+
+int main(void)
+{
+	fizz_buzz();
+	return (0);
+}
