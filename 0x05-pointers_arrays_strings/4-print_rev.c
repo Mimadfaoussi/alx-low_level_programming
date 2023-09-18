@@ -1,11 +1,28 @@
 #include "main.h"
 
+
 /**
- * print_rev-print a string in reverse order.
+ * _strlen-return the length of a string.
+ * @s:the string.
+ * Return:int the length .
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+
+/**
+ * print_rev-print a string in rev order.
  * @s:the string.
  * Return:nothing.
  */
-
 void print_rev(char *s)
 {
 	int i;
