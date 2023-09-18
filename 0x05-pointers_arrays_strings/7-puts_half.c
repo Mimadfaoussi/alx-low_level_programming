@@ -33,6 +33,7 @@ void puts_half(char *str)
 		half = (length - 1) / 2;
 	else
 		half = length / 2;
+	half++;
 	while (str[half] != '\0')
 	{
 		_putchar(str[half]);
