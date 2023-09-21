@@ -9,7 +9,7 @@
 
 char *rot13(char *str)
 {
-	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 	int j;
 
