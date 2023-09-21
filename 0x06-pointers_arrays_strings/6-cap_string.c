@@ -29,12 +29,10 @@ int charisalpha(char x)
 char *cap_string(char *str)
 {
 		int i;
-		int length;
 		int b;
 
 		i = 0;
 		b = 0;
-		length = _strlen(str);
 		while (str[i] != '\0')
 		{
 			if (
@@ -68,5 +66,4 @@ char *cap_string(char *str)
 		return (str);
 
 }
-
 
