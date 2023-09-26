@@ -18,15 +18,28 @@ void print_diagsums(int *a, int size)
 	int sum2;
 	int i;
 	int j;
+	int val;
 
 	sum1 = 0;
 	sum2 = 0;
 	i = 0;
+	val = 0;
 	while (i < size)
 	{
-		sum1 = sum1 + a[i][i];
-		sum2 += a[size - i - 1][size - i - 1];
+		j = 0;
+		while (j < size)
+		{
+			if (i == j)
+				sum1 += a[val];
+			if (size - i - 1  == j)
+				sum2 += a[val];
+			val++;
+			j++;
+		}
 		i++;
 	}
-	printf("%d, %d", sum1, sum2);
+	printf("%d, %d\n", sum1, sum2);
+
 }
+
+
