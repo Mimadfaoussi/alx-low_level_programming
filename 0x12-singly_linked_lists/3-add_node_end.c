@@ -7,6 +7,7 @@
  * Description: returns a pointer to allocated space in memory
  * Return: pointer
  */
+
 char *_strdup(const char *str)
 {
 	int i, j;
@@ -49,17 +50,25 @@ list_t *add_node_end(list_t **head, const char *str)
 	int	count;
 
 	count = 0;
-	index = *head;
-	while (str[count] != '\0')
+	while (str[count])
 		count++;
-	ptr = malloc(sizeof(char) * count + 1);
+	ptr = malloc(sizeof(list_t));
 	if (ptr == NULL)
 		return (NULL);
+	if (str)
+		ptr->str = _strdup(str);
+	else
+		ptr->str = NULL;
 	ptr->len = count;
-	ptr->str = _strdup(str);
-	while (index->next != NULL)
-		index = index->next;
-	index->next = ptr;
+	if (*head)
+	{
+		index = *head;
+		while (index->next != NULL)
+			index = index->next;
+		index->next = ptr;
+	}
+	else
+		*head = ptr;
 	ptr->next = NULL;
 	return (ptr);
 }
