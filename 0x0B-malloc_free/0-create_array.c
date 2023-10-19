@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * create_array - Entry point
  *@size: size of the array to create.
@@ -21,8 +21,9 @@ char *create_array(unsigned int size, char c)
 	while (i < size)
 	{
 		ptr[i] = c;
-		i++
+		i++;
 	}
 	return (ptr);
 
 }
+
