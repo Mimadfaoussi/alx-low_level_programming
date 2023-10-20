@@ -1,10 +1,12 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 /**
  * argstostr - concatinate args.
  * @ac: takes in nb of args.
  * @av: the chars
  * Return: the new string.
  */
-
 char *argstostr(int ac, char **av)
 {
 	char	*str;
