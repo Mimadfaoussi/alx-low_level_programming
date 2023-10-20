@@ -39,7 +39,7 @@ char **strtow(char *str)
 	int	index;
 	int	k;
 
-	if (str == NULL || str == "")
+	if (str == 0 || *str == 0)
 		return (NULL);
 	nb_words = words(str);
 	grid = malloc(sizeof(char *) * nb_words + 1);
