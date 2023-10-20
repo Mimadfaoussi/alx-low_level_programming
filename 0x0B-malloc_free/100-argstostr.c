@@ -44,6 +44,7 @@ char *argstostr(int ac, char **av)
 			size++;
 		}
 		str[size] = '\n';
+		size++;
 		i++;
 	}
 	str[size] = '\0';
