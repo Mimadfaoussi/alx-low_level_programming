@@ -14,9 +14,9 @@ void free_grid(int **grid, int height)
 	int	i;
 
 	i = 0;
-	if (!gird)
+	if (grid == NULL)
 		return;
-	if (!grid[i])
+	if (grid[i] == NULL)
 		return;
 	while (i < height)
 	{
