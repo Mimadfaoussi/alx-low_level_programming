@@ -26,7 +26,7 @@ int palindrome(char *s, int i)
 	int size;
 
 	size = _strlen_recursion(s) - i - 1;
-	if (i == size / 2)
+	if (i > size / 2)
 		return (1);
 	if (s[i] == s[size])
 		return (palindrome(s, i + 1));
