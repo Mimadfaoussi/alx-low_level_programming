@@ -11,9 +11,9 @@ int is_prime(int i, int n)
 {
 	if (n < 2)
 		return (0);
-	if (n % i == 0)
+	else if (n % i == 0)
 		return (0);
-	if (n > i)
+	else if (n > i)
 		return (is_prime(i++, n));
 	return (1);
 }
