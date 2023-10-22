@@ -26,22 +26,26 @@ int conv(char *str)
  * Return: 0 for success and other for faillure .
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int	a;
-	int	b;
-	int	result;
+	int i, nb;
 
 	if (argc == 3)
 	{
-		a = conv(argv[1]);
-		b = conv(argv[2]);
-		result = a * b;
-		printf("%d\n", result);
+		nb = 1;
+
+		for (i = 1; i < 3; i++)
+			nb = nb * atoi(argv[i]);
+
+		printf("%d\n", nb);
 	}
+	
 	else
+	{
 		printf("Error\n");
+		return (1);
+	}
+	
+
 	return (0);
 }
-
-
