@@ -11,6 +11,8 @@ size_t print_listint(const listint_t *h)
 	listint_t	*ptr;
 	size_t		nbnodes;
 
+	if (h == NULL)
+		return (0);
 	nbnodes = 0;
 	ptr = (listint_t *)h;
 	while (ptr != NULL)
