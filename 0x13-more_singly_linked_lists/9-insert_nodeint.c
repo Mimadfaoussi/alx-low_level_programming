@@ -29,7 +29,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 		*head = node;
 		return (node);
 	}
-	while (i != index && ptr != NULL)
+	ptr = *head;
+	while (i < index && ptr != NULL)
 	{
 		i++;
 		before = ptr;
@@ -50,4 +51,3 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	else
 		return (NULL);
 }
-
