@@ -21,6 +21,13 @@ int main(int argc, char **argv)
 
 	change = atoi(argv[1]);
 
+	if (change < 0)
+	{
+		sum = 0;
+		printf("%d\n",sum);
+		return (0);
+	}
+
 	for (sum = 0; change > 0; sum++)
 	{
 		if (change - 25 >= 0)
