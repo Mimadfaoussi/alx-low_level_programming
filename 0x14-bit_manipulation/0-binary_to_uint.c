@@ -1,7 +1,7 @@
 /**
- * binary_to_uint - convert binary string to decimal
- * @b: binary string
- *
+ * _power - convert binary string to decimal
+ * @nb: nber
+ * @times:nb of times
  * Return: decimal (unsigned int)
  */
 #include <stdio.h>
@@ -23,6 +23,12 @@ unsigned int _power(unsigned int nb, unsigned int times)
 	}
 	return (x);
 }
+/**
+  * _strlen - Returns the length of a string
+  * @b: String to count
+  *
+  * Return: String length
+  */
 unsigned int _strlen(const char *b)
 {
 	unsigned int i;
@@ -34,6 +40,13 @@ unsigned int _strlen(const char *b)
 		i++;
 	return (i);
 }
+
+/**
+  * binary_to_uint - convert string to binary
+  * @b: String to count
+  *
+  * Return: unsigned int.
+  */
 
 unsigned int binary_to_uint(const char *b)
 {
