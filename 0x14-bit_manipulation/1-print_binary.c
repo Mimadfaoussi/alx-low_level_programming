@@ -19,9 +19,9 @@ void print_binary(unsigned long int n)
 		if (number & 1)
 		{
 			_putchar('1');
-			j++;
+			j = 1;
 		}
-		else if (j)
+		else if (j == 1)
 		{
 			_putchar('0');
 		}
