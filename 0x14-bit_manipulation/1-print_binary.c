@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	j = 0;
 	index = 63;
-	while (index)
+	while (index >= 0)
 	{
 		number = n >> index;
 		if (number & 1)
