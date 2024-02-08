@@ -1,27 +1,30 @@
 #include "main.h"
 
 /**
- * flip_bits-the number of bits you would need to flip to get from nb to nb
- * @n:first number
- * @m:second number
- * Return:nb of bits we need to flip
+ * flip_bits - gets number of bits you would need to flip nb et nb1.
+ * @n: nb1 to flip.
+ * @m: nb2 to flip.
+ * Return: nb of bits we need to flip.
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long	nb;
+	int i;
+	unsigned long int nb1;
+	unsigned long int nb2;
 	unsigned int	count;
-	int		index;
 
 	count = 0;
-	nb = n ^ m;
-	index = 63;
-	while (index >= 0)
+	i = 63;
+	while (i >= 0)
 	{
-		if ((nb >> index) & 1 == 1)
+		nb1 = (n >> i) & 1;
+		nb2 = (m >> i) & 1;
+		if ((nb1 ^ nb2) == 1)
+		{
 			count++;
-		index--;
+		}
+		i--;
 	}
 	return (count);
 }
-
