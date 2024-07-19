@@ -1,6 +1,14 @@
 #include "search_algos.h"
 #include <math.h>
 
+/**
+ * jump_search-searching algorithme that is faster than linear search
+ * @array:pointer to first element of the array
+ * @size:size of the array
+ * @value: the value we re trying to find
+ * Return: index or -1
+ */
+
 int jump_search(int *array, size_t size, int value)
 {
 	size_t	jump;
@@ -9,7 +17,7 @@ int jump_search(int *array, size_t size, int value)
 	size_t	max;
 
 	max = 1;
-	if (!array)
+	if (!array || !*array)
 		return (-1);
 	jump = sqrt(size);
 	i = 0;
